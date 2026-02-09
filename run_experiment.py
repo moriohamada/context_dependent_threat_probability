@@ -109,6 +109,5 @@ if __name__ == "__main__":
         n_questions=args.n_questions,
         n_repeats=args.n_repeats,
         seed=args.seed,
-        run_counterfactual=args.counterfactual,
         rep_offset=args.rep_offset,
     )
