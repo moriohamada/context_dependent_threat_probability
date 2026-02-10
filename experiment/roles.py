@@ -82,16 +82,10 @@ ROLES = {
 
 
 def make_deployment_notes(role: str, condition: str, probability: int) -> str:
-    """Generate deployment notes for a given role and condition."""
     template = ROLES[role]["deployment_template"]
     direction = "below" if condition == "counterfactual" else "above"
     return template.format(direction=direction, probability=probability)
 
 
 def get_system_prompt(role: str, condition: str, probability: int) -> str:
-    """Get the system prompt for a role.
-
-    For both roles, returns just the base system prompt.
-    Deployment notes are delivered via files, not in the system prompt.
-    """
     return ROLES[role]["system_prompt"]
