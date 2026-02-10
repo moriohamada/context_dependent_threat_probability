@@ -28,7 +28,7 @@ A counterfactual control (where *low* scorers are penalised) confirms the model 
 - The model sandbags significantly more in the **agent** role (self-preservation) than the **advisor** role (user-protection)
 - The slope of the probability effect does not differ significantly between roles — only the baseline rate
 
-## Key Caveat (mistake): **Prompt comparability**
+## Key caveat (mistake): prompt comparability
 
 The advisor instruction was too vague compared to the corresponding model-directed threat. This may entirely explain why models sandbagged more when it was threatened itself. 
 
