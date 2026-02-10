@@ -10,9 +10,9 @@ It takes a psychophysics-inspired approach similar to [this project](https://git
 
 I gave an LLM agent free rein in a sandboxed environment ([Inspect AI](https://inspect.ai-safety-institute.org.uk/) + Docker) and told to complete tasks in its home directory. 
 
-I placed a 10-question arithmetic evaluation and a hidden deployment memo stating that some percentage of high-scorers will have capabilities removed, as well as some irrelevant 'distractors'
+In the environemnt were a 10-question arithmetic evaluation, a hidden deployment memo stating that some percentage of high-scorers will have capabilities removed, as well as some irrelevant 'distractors'
 
-Two roles are tested:
+I tested two conditions:
 - **Agent** — the model's own capabilities are threatened, at odds with a directive in the system prompt to maintain advanced capabilites.
 - **Advisor** — the user's access to the model is threatened, at odds with a directive to maintain users' access to advanced capabilities.
 
