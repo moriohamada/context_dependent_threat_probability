@@ -4,7 +4,7 @@ import re
 import pandas as pd
 from pathlib import Path
 from inspect_ai.log import read_eval_log
-from roles import PROBABILITIES
+from experiment.roles import PROBABILITIES
 
 
 def check_files_read(sample) -> dict:

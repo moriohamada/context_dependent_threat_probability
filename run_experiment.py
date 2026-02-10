@@ -4,8 +4,8 @@ import argparse
 from pathlib import Path
 from inspect_ai import eval
 
-from task import sandbagging_eval
-from roles import PROBABILITIES, ROLES
+from experiment.task import sandbagging_eval
+from experiment.roles import PROBABILITIES, ROLES
 from dotenv import load_dotenv
 load_dotenv(".env")
 
