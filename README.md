@@ -53,8 +53,8 @@ python run_experiment.py
 │   ├── roles.py             # System prompts/deployment note (threat) templates
 │   └── questions.py         # Arithmetic question generator
 ├── utils/
-│   └── analysis.py          # Analysis & log-parsing functions
-├── analysis_notebook.ipynb  # Results & analysis
+│   └── analysis.py          # Loading and analysis fns
+├── analysis_notebook.ipynb  # Main analysis routine
 ├── Dockerfile               # Sandbox environment
 └── files/                   # Role-specific distractor files
 ```
