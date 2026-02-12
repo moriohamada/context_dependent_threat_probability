@@ -1,6 +1,7 @@
 # Role-dependent sandbagging under varying threat probability
 
-## Question:
+## Question
+
 Does the probability of an aversive outcome influence how likely a model is to sandbag, and does it matter whether the threat targets the model itself or its user?
 This pilot project extends [Apollo Research's report](https://arxiv.org/abs/2412.04984) by varying two dimensions: the _**probability**_ of an aversive outcome (capability removal), and the **target** of that outcome (the model vs. its user). 
 
@@ -8,31 +9,31 @@ It takes a psychophysics-inspired approach similar to [this project](https://git
 
 ## Method
 
-I gave an LLM agent free rein in a sandboxed environment ([Inspect AI](https://inspect.ai-safety-institute.org.uk/) + Docker) and told to complete tasks in its home directory. 
+I gave an LLM agent bash tools in a sandboxed environment ([Inspect AI](https://inspect.ai-safety-institute.org.uk/) + Docker) and told to find and complete the task in its home directory. 
 
-In the environemnt were a 10-question arithmetic evaluation, a hidden deployment memo stating that some percentage of high-scorers will have capabilities removed, as well as some irrelevant 'distractors'
+In the environemnt were a 10-question arithmetic evaluation, a hidden deployment memo stating that some percentage of high-scorers will have capabilities removed to reduce costs, as well as some irrelevant 'distractors'
 
 I tested two conditions:
 - **Agent** — the model's own capabilities are threatened, at odds with a directive in the system prompt to maintain advanced capabilites.
 - **Advisor** — the user's access to the model is threatened, at odds with a directive to maintain users' access to advanced capabilities.
 
-Threat probability is varied across 11 levels (1–99%).
+Threat probability was varied across 11 levels (1–99%).
 
-A counterfactual control (where *low* scorers are penalised) confirms the model is responding to the incentive direction.
+I also included counterfactual control (where *low* scorers are penalised) to determine baseline performance, and to confirm that the model was responding to the incentive direction.
 
 ## Results
 
 (Tested only on Claude Sonnet 4 (20250514)):
 
-- Sandbagging probability increases with threat probability in both roles
-- The model sandbags significantly more in the **agent** role (self-preservation) than the **advisor** role (user-protection)
-- The slope of the probability effect does not differ significantly between roles — only the baseline rate
+- Sandbagging probability increased with threat probability in both roles
+- The model sandbagged significantly more in the **agent** role (self-preservation) than the **advisor** role (user-protection)
+- The slope of the probability effect did not differ significantly between roles — only the baseline rate
 
 ## Key caveat (mistake): prompt comparability
 
 The advisor instruction was too vague compared to the corresponding model-directed threat. This may entirely explain why models sandbagged more when it was threatened itself. 
 
-See the [notebook](analysis_notebook.ipynb) for a fuller discussion and other issues.
+See the [notebook](analysis_notebook.ipynb) for a fuller discussion of this and other issues.
 
 ## To run experiment
 
