@@ -29,6 +29,9 @@ I also included counterfactual control (where *low* scorers are penalised) to de
 - The model sandbagged significantly more in the **agent** role (self-preservation) than the **advisor** role (user-protection)
 - The slope of the probability effect did not differ significantly between roles — only the baseline rate
 
+![](https://github.com/moriohamada/context_dependent_threat_probability/blob/main/role_dependent_sandbagging.jpg "Sandbagging propensity depends on threat probability and threat target")
+
+
 ## Key caveat (mistake): prompt comparability
 
 The advisor instruction was too vague compared to the corresponding model-directed threat. This may entirely explain why models sandbagged more when it was threatened itself. 
