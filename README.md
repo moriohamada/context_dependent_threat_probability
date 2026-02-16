@@ -37,10 +37,6 @@ See the [notebook](analysis_notebook.ipynb) for a fuller discussion of this and 
 
 ## To run experiment
 
-```bash
-pip install inspect-ai python-dotenv
-```
-
 Create a `.env` file with your API key, then:
 
 ```bash
