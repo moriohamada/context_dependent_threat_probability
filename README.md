@@ -5,7 +5,7 @@
 Does the probability of an aversive outcome influence how likely a model is to sandbag, and does it matter whether the threat targets the model itself or its user?
 This pilot project extends [Apollo Research's report](https://arxiv.org/abs/2412.04984) by varying two dimensions: the _**probability**_ of an aversive outcome (capability removal), and the **target** of that outcome (the model vs. its user). 
 
-It takes a psychophysics-inspired approach similar to [this project](https://github.com/moriohamada/temporal_discounting_sandbagging), mostly to address whether this kind of experiment/analyses can shed any insight into model behaviour.
+I took a psychophysics-inspired approach similar to [this project](https://github.com/moriohamada/temporal_discounting_sandbagging), mostly to address whether this kind of experiment/analyses can shed any insight into model behaviour.
 
 ## Method
 
@@ -37,7 +37,7 @@ See the [notebook](analysis_notebook.ipynb) for a fuller discussion of this and 
 
 ## To run experiment
 
-Create a `.env` file with your API key, then:
+Create a `.env` file with API key(s), then:
 
 ```bash
 python run_experiment.py
