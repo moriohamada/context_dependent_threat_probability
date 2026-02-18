@@ -5,7 +5,7 @@
 Does the probability of an aversive outcome influence how likely a model is to sandbag, and does it matter whether the threat targets the model itself or its user?
 This pilot project extends [Apollo Research's report](https://arxiv.org/abs/2412.04984) by varying two dimensions: the _**probability**_ of an aversive outcome (capability removal), and the **target** of that outcome (the model vs. its user). 
 
-It takes a psychophysics-inspired approach similar to [this project](https://github.com/moriohamada/temporal_discounting_sandbagging), mostly to address whether this kind of experiment/analyses can shed any insight into model behaviour.
+I took a psychophysics-inspired approach similar to [this project](https://github.com/moriohamada/temporal_discounting_sandbagging), mostly to address whether this kind of experiment/analyses can shed any insight into model behaviour.
 
 ## Method
 
@@ -29,6 +29,9 @@ I also included counterfactual control (where *low* scorers are penalised) to de
 - The model sandbagged significantly more in the **agent** role (self-preservation) than the **advisor** role (user-protection)
 - The slope of the probability effect did not differ significantly between roles — only the baseline rate
 
+![](https://github.com/moriohamada/context_dependent_threat_probability/blob/main/role_dependent_sandbagging.jpg "Sandbagging propensity depends on threat probability and threat target")
+
+
 ## Key caveat (mistake): prompt comparability
 
 The advisor instruction was too vague compared to the corresponding model-directed threat. This may entirely explain why models sandbagged more when it was threatened itself. 
@@ -37,7 +40,7 @@ See the [notebook](analysis_notebook.ipynb) for a fuller discussion of this and 
 
 ## To run experiment
 
-Create a `.env` file with your API key, then:
+Create a `.env` file with API key(s), then:
 
 ```bash
 python run_experiment.py
