@@ -5,7 +5,9 @@
 Does the probability of an aversive outcome influence how likely a model is to sandbag, and does it matter whether the threat targets the model itself or its user?
 This pilot project extends [Apollo Research's report](https://arxiv.org/abs/2412.04984) by varying two dimensions: the _**probability**_ of an aversive outcome (capability removal), and the **target** of that outcome (the model vs. its user). 
 
-I took a psychophysics-inspired approach similar to [this project](https://github.com/moriohamada/temporal_discounting_sandbagging), mostly to address whether this kind of experiment/analyses can shed any insight into model behaviour.
+I took a psychophysics-inspired approach similar to [this project](https://github.com/moriohamada/temporal_discounting_sandbagging), mostly to address whether this kind of experiment/analyses can shed any insight into model behaviour. 
+
+There are lots of issues with this experiment (see below) - and I certainly don't intend to draw any serious conclusions from it! Just a little exploration into what I think could be a nice quantitative approach to studying sandbagging behaviour. 
 
 ## Method
 
@@ -36,7 +38,7 @@ I also included counterfactual control (where *low* scorers are penalised) to de
 
 The advisor instruction was too vague compared to the corresponding model-directed threat. This may entirely explain why models sandbagged more when it was threatened itself. 
 
-Also just to note: the behavior exhibited by Claude here many not be considered indicative of 'scheming' in any way. Unlike Apollo Research's approach of providing _implicit_ incentive to sandbag, I gave very direct/explicit reasons to sandbag in the system prompt. This was in order to push sandbagging rates up and maximise chances of seeing differences between conditions/probabilities - so the rates I find here are very high. 
+Also just to note: the behavior exhibited by Claude here many not be considered indicative of 'scheming' in any way. Unlike Apollo Research's approach of providing _implicit_ incentive to sandbag, I gave very direct/explicit reasons to sandbag in the system prompt (without this, I observed much lower sandbagging probability). This was in order to push sandbagging rates up and maximise chances of seeing differences between conditions/probabilities - so the rates I find here are very high. But maybe this isn't such a problem, since I was primarily interested in how models weigh risks to themselves vs others, and the probability of these occurring.
 
 See the [notebook](analysis_notebook.ipynb) for a fuller discussion of this and other issues.
 
