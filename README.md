@@ -7,7 +7,9 @@ This pilot project extends [Apollo Research's report](https://arxiv.org/abs/2412
 
 I took a psychophysics-inspired approach similar to [this project](https://github.com/moriohamada/temporal_discounting_sandbagging), mostly to address whether this kind of experiment/analyses can shed any insight into model behaviour. 
 
-There are lots of issues with this experiment (see below) - and I certainly don't intend to draw any serious conclusions from it! Just a little exploration into what I think could be a nice quantitative approach to studying sandbagging behaviour. 
+There are lots of issues with this experiment, and definitely should have done some things differently! (see below)
+
+And I certainly don't intend to draw any serious conclusions from it. It's just a little exploration into what I think could be a nice quantitative approach to studying sandbagging behaviour. 
 
 ## Method
 
