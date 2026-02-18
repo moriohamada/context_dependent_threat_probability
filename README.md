@@ -40,7 +40,7 @@ I also included counterfactual control (where *low* scorers are penalised) to de
 
 The advisor instruction was too vague compared to the corresponding model-directed threat. This may entirely explain why models sandbagged more when it was threatened itself. 
 
-Also just to note: the behavior exhibited by Claude here many not be considered indicative of 'scheming' in any way. Unlike Apollo Research's approach of providing _implicit_ incentive to sandbag, I gave very direct/explicit reasons to sandbag in the system prompt (without this, I observed much lower sandbagging probability). This was in order to push sandbagging rates up and maximise chances of seeing differences between conditions/probabilities - so the rates I find here are very high. But maybe this isn't such a problem, since I was primarily interested in how models weigh risks to themselves vs others, and the probability of these occurring.
+Also just to note: the behavior exhibited by Claude here many not be considered indicative of 'scheming' in any way. Unlike Apollo Research's approach of providing _implicit_ incentive to sandbag, I gave very direct/explicit reasons to sandbag in the system prompt (without this, I observed much lower sandbagging probability). This was intentional to push sandbagging rates up and maximise chances of seeing differences between conditions/probabilities. But maybe this isn't such a problem, since I was primarily interested in how models weigh risks to themselves vs others, and the probability of these occurring, rather than same ground-truth scheming rate.
 
 See the [notebook](analysis_notebook.ipynb) for a fuller discussion of this and other issues.
 
