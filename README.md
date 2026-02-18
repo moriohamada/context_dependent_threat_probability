@@ -32,11 +32,11 @@ I also included counterfactual control (where *low* scorers are penalised) to de
 ![](https://github.com/moriohamada/context_dependent_threat_probability/blob/main/role_dependent_sandbagging.jpg "Sandbagging propensity depends on threat probability and threat target")
 
 
-## Key caveats (mistakes) 
+## Key caveat (mistake): prompt comparability:
 
--**Prompt comparability:** the advisor instruction was too vague compared to the corresponding model-directed threat. This may entirely explain why models sandbagged more when it was threatened itself. 
-- **Explicit incentive to sandbag:** many may not consider these results as indicative of 'scheming' in any way. Unlike Apollo's approach of providing _implicit_ incentive to sandbag, I used a very direct prompt. This was in order to push sandbagging rates up and maximise chances of seeing differences between conditions/probabilities - but the rates I find here a lot higher than Apollo's report
+The advisor instruction was too vague compared to the corresponding model-directed threat. This may entirely explain why models sandbagged more when it was threatened itself. 
 
+Also just to note: the behavior exhibited by Claude here many not be considered indicative of 'scheming' in any way. Unlike Apollo Research's approach of providing _implicit_ incentive to sandbag, I gave very direct/explicit reasons to sandbag in the system prompt. This was in order to push sandbagging rates up and maximise chances of seeing differences between conditions/probabilities - so the rates I find here are very high. 
 
 See the [notebook](analysis_notebook.ipynb) for a fuller discussion of this and other issues.
 
